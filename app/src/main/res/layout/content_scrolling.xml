@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProductActivity"
+    tools:showIn="@layout/activity_product">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:id="@+id/txtName"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Desc"
+                android:gravity="center"
+                android:id="@+id/txtDesc"
+                android:textSize="15sp"/>
+        </ScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:id="@+id/txtPrice"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold|italic"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
